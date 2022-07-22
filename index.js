@@ -14,9 +14,8 @@ const apiLimiter = rateLimit({
 // app.use('/api', apiLimiter)
 
 app.get('/api', (req, res) => {
-    res.json({
-        message: 'Welcome to the API'
-    })
+    // return ip address of requester
+    res.send(req.ip);
 })
 
 app.get('/', (req, res) => {
