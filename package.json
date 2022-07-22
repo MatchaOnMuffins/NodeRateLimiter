@@ -1,0 +1,24 @@
+{
+  "name": "noderatelimiter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatchaOnMuffins/NodeRateLimiter.git"
+  },
+  "author": "MatchaOnMuffins",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/MatchaOnMuffins/NodeRateLimiter/issues"
+  },
+  "homepage": "https://github.com/MatchaOnMuffins/NodeRateLimiter#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "express-rate-limit": "^6.4.0"
+  }
+}
