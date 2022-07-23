@@ -19,9 +19,10 @@ app.get('/api', (req, res) => {
 })
 
 app.get('/', (req, res) => {
-    res.send('Hello World Yay!');
+    res.send(`Hello, ${req.ip}`);
 })
 
 app.get('/ip', (request, response) => response.send(request.ip))
 
 app.listen(port, () => console.log('Rate Limiting app listening on port ' + port))
+
