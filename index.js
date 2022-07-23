@@ -6,12 +6,12 @@ app.set('trust proxy', 1)
 
 const apiLimiter = rateLimit({
     windowMs: 15 * 1000,
-    max: 2,
+    max: 30,
     standardHeaders: true,
     legacyHeaders: false,
 })
 
-// app.use('/api', apiLimiter)
+app.use('/api', apiLimiter)
 
 app.get('/api', (req, res) => {
     // return ip address of requester
@@ -19,7 +19,7 @@ app.get('/api', (req, res) => {
 })
 
 app.get('/', (req, res) => {
-    res.send('Hello World')
+    res.send('Hello World Yay!');
 })
 
 app.get('/ip', (request, response) => response.send(request.ip))
